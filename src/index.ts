@@ -32,10 +32,10 @@ export default {
 		// return new Response('Hello World!');
 
 		const url = new URL(request.url);
-    const pathname = url.pathname.substr(1);
+    const pathname = url.pathname.substring(1); // remove initial /
 
 		if (pathname === "") {
-      return new Response("kmn.sh: link shortening service for the Keyman Project. Learn more at: https://github.com/keymanapp/kmn.sh");
+      return new Response("kmn.sh: link shortening service for the Keyman Project. Learn more at: https://github.com/keymanapp/kmn.sh 😇");
     }
 
 		let redirectURL: string = "";
