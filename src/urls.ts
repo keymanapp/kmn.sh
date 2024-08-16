@@ -21,6 +21,8 @@ export const shortURLs: ShortURL[] = [
   { match: "ltcon2024ldml", redirect: "https://docs.google.com/presentation/d/1UBjNHdEdiiTb33H6AfqRtJqOXtl9ZBwg20ZMW7illZU/edit?usp=sharing"},
   // Keyman What's New presentation, April 2024 LTCT
   { match: "ltct2024", redirect: "https://docs.google.com/presentation/d/1lQlbvxA0w_In9lq7heHYBqkK0h06p-UjMBwpFv9_IZA/edit?usp=sharing"},
+  // Keyman What's New presentation, August 2024 LTUse
+  { match: "ltuse2024", redirect: "https://docs.google.com/presentation/d/1PvhQTA3KkQoddp_opqsJkP6cCGXDE8cP8AiIvW27Bac/edit?usp=sharing"},
 
   // { match: "submit-keyboard", redirect: "https://help.keyman.com/developer/keyboards/" },
 ];
