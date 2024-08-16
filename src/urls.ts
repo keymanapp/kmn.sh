@@ -22,7 +22,7 @@ export const shortURLs: ShortURL[] = [
   // Keyman What's New presentation, April 2024 LTCT
   { match: "ltct2024", redirect: "https://docs.google.com/presentation/d/1lQlbvxA0w_In9lq7heHYBqkK0h06p-UjMBwpFv9_IZA/edit?usp=sharing"},
   // Keyman What's New presentation, August 2024 LTUse
-  { match: "ltuse2024", redirect: "https://docs.google.com/presentation/d/1PvhQTA3KkQoddp_opqsJkP6cCGXDE8cP8AiIvW27Bac/edit?usp=sharing"},
+  { match: "ltuse2024", redirect: "https://docs.google.com/presentation/d/15mtIjbZ4M9NxI8IrHu5HDn8517ueUs3m10yK1i70WII/edit?usp=sharing"},
 
   // { match: "submit-keyboard", redirect: "https://help.keyman.com/developer/keyboards/" },
 ];
