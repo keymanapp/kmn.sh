@@ -23,6 +23,10 @@ export const shortURLs: ShortURL[] = [
   { match: "ltct2024", redirect: "https://docs.google.com/presentation/d/1lQlbvxA0w_In9lq7heHYBqkK0h06p-UjMBwpFv9_IZA/edit?usp=sharing"},
   // Keyman What's New presentation, August 2024 LTUse
   { match: "ltuse2024", redirect: "https://docs.google.com/presentation/d/15mtIjbZ4M9NxI8IrHu5HDn8517ueUs3m10yK1i70WII/edit?usp=sharing"},
+  // Keyman + LDML + CLDR seminar at CANIL, September 2024
+  { match: "canil2024", redirect: "https://docs.google.com/presentation/d/1n0X_-Nu0WAc7R1iNXYUwBvQLySGRAVubiAn-Zn3olVQ/edit?usp=sharing"},
+  // LDML Workshop at FPCF, September 2024
+  { match: "fpcf2024ldml", redirect: "https://docs.google.com/presentation/d/1eCQBmaiJoPK77MCPp0KvBgFefnLBLLx066RHFlqRmqA/edit?usp=sharing"},
 
   // { match: "submit-keyboard", redirect: "https://help.keyman.com/developer/keyboards/" },
 ];
