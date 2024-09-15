@@ -28,5 +28,11 @@ export const shortURLs: ShortURL[] = [
   // LDML Workshop at FPCC, September 2024
   { match: "fpcc2024ldml", redirect: "https://docs.google.com/presentation/d/1eCQBmaiJoPK77MCPp0KvBgFefnLBLLx066RHFlqRmqA/edit?usp=sharing"},
 
-  // { match: "submit-keyboard", redirect: "https://help.keyman.com/developer/keyboards/" },
+  /*
+   * Keyman Videos
+   */
+
+  // Keyman jobs 'get involved' video, 2024
+  { match: "video-get-involved-de", redirect: "https://www.youtube-nocookie.com/embed/UZ_lKqRlEBE?hl=de&cc_lang_pref=de&cc_load_policy=1"},
+  { match: "video-get-involved-en", redirect: "https://www.youtube-nocookie.com/embed/UZ_lKqRlEBE?hl=en&cc_lang_pref=en&cc_load_policy=1"},
 ];
