@@ -1,4 +1,4 @@
-const km = (matches: RegExpMatchArray): string =>  "https://help.keyman.com/developer/latest-version/reference/messages/" + matches[1];
+const km = (matches: RegExpMatchArray): string =>  "https://help.keyman.com/developer/latest-version/reference/messages/" + matches[1].toLowerCase();
 const kb = (matches: RegExpMatchArray): string => "https://help.keyman.com/knowledge-base/?id=" + matches[1];
 
 type RedirectFunction = (matches: RegExpMatchArray) => string;
