@@ -40,28 +40,49 @@ export default {
 
 		let redirectURL: string = "";
 
-		for(const u of shortURLs) {
+		const u = shortURLs.find((u) => {
 			if(typeof u.match == 'string') {
 				if(pathname == u.match) {
 					if(typeof u.redirect != 'string') {
 						throw new Error('Invalid redirect');
 					}
 					redirectURL = u.redirect;
-					break;
+					return true;
 				}
 			} else {
 				const matches = u.match.exec(pathname);
 				if(matches) {
 					redirectURL = typeof u.redirect == 'string' ? u.redirect : u.redirect(matches);
-					break;
+					return true;
 				}
 			}
-		}
+			return false;
+		});
 
-		if(redirectURL == "") {
+		if(!u) {
 			return new Response("Invalid shortlink");
 		}
 
-    return Response.redirect(redirectURL, 301);
+		if(u.usePage) {
+			const html = `<!DOCTYPE html>
+				<html>
+				<head>
+					<title>Redirect</title>
+					<meta http-equiv="refresh" content="0; url=${redirectURL}">
+				</head>
+				<body>
+					<h1>Redirect</h1>
+					<p><a href='${redirectURL}'>Click here to continue</a></p>
+				</body>
+				</html>`;
+
+			return new Response(html, {
+				headers: {
+					"content-type": "text/html;charset=UTF-8",
+				},
+			});
+		} else {
+			return Response.redirect(redirectURL, 301);
+		}
 	},
 };

@@ -2,7 +2,7 @@ const km = (matches: RegExpMatchArray): string =>  "https://help.keyman.com/deve
 const kb = (matches: RegExpMatchArray): string => "https://help.keyman.com/knowledge-base/?id=" + matches[1];
 
 type RedirectFunction = (matches: RegExpMatchArray) => string;
-interface ShortURL { match: string|RegExp; redirect: string|RedirectFunction };
+interface ShortURL { match: string|RegExp; redirect: string|RedirectFunction; usePage?: boolean };
 
 export const shortURLs: ShortURL[] = [
   // Keyman Developer compiler error short codes KM#####, e.g. KM02010, km02010
@@ -33,6 +33,6 @@ export const shortURLs: ShortURL[] = [
    */
 
   // Keyman jobs 'get involved' video, 2024
-  { match: "video-get-involved-de", redirect: "https://www.youtube-nocookie.com/embed/UZ_lKqRlEBE?hl=de&cc_lang_pref=de&cc_load_policy=1"},
-  { match: "video-get-involved-en", redirect: "https://www.youtube-nocookie.com/embed/UZ_lKqRlEBE?hl=en&cc_lang_pref=en&cc_load_policy=1"},
+  { match: "video-get-involved-de", redirect: "https://www.youtube-nocookie.com/embed/UZ_lKqRlEBE?hl=de&cc_lang_pref=de&cc_load_policy=1", usePage: true},
+  { match: "video-get-involved-en", redirect: "https://www.youtube-nocookie.com/embed/UZ_lKqRlEBE?hl=en&cc_lang_pref=en&cc_load_policy=1", usePage: true},
 ];
