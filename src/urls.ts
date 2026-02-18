@@ -27,6 +27,8 @@ export const shortURLs: ShortURL[] = [
   { match: "canil2024", redirect: "https://docs.google.com/presentation/d/1n0X_-Nu0WAc7R1iNXYUwBvQLySGRAVubiAn-Zn3olVQ/edit?usp=sharing"},
   // LDML Workshop at FPCC, September 2024
   { match: "fpcc2024ldml", redirect: "https://docs.google.com/presentation/d/1eCQBmaiJoPK77MCPp0KvBgFefnLBLLx066RHFlqRmqA/edit?usp=sharing"},
+  // Keyman What's Ne wpresentation, Feb 2026 LTUse
+  { match: "ltuse2026", redirect: "https://docs.google.com/presentation/d/1G9_hC9KAtQSSUoyetOzwJoUlC6sHjlV33jQc0reHVUc/edit?usp=sharing"},
 
   /*
    * Keyman Videos
