@@ -1,4 +1,4 @@
-name = "shrtnr"
+name = "kmn-sh"
 main = "src/index.ts"
 compatibility_date = "2024-02-23"
 
