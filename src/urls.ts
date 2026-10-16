@@ -29,7 +29,8 @@ export const shortURLs: ShortURL[] = [
   { match: "fpcc2024ldml", redirect: "https://docs.google.com/presentation/d/1eCQBmaiJoPK77MCPp0KvBgFefnLBLLx066RHFlqRmqA/edit?usp=sharing"},
   // Keyman What's Ne wpresentation, Feb 2026 LTUse
   { match: "ltuse2026", redirect: "https://docs.google.com/presentation/d/1G9_hC9KAtQSSUoyetOzwJoUlC6sHjlV33jQc0reHVUc/edit?usp=sharing"},
-
+  // Unicode Technical Workshop 2026
+  { match: "utw2026", redirect: "https://github.com/keymanapp/utw2026"},
   /*
    * Keyman Videos
    */
